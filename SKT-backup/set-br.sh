@@ -14,11 +14,11 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 # Link Hosting Kalian
-sktrepo="raw.githubusercontent.com/rosi606/R051A10/main/SKT-backup"
+sktrepo="raw.githubusercontent.com/rosi606/R051A10/main/"
 
 apt install rclone -y
 printf "q\n" | rclone config
-wget -O /root/.config/rclone/rclone.conf "https://${sktrepo}/rclone.conf"
+wget -O /root/.config/rclone/rclone.conf "https://${sktrepo}SKT-backup/rclone.conf"
 git clone  https://github.com/magnific0/wondershaper.git
 cd wondershaper
 make install
