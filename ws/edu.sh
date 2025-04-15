@@ -4,10 +4,10 @@
 # ==========================================
 
 # Link Hosting Kalian 
-sktrepo="raw.githubusercontent.com/rosi606/R051A10/main/websocket"
+sktrepo="raw.githubusercontent.com/rosi606/R051A10/main/"
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/ws-nontls https://${sktrepo}/websocket.py
+wget -q -O /usr/local/bin/ws-nontls https://${sktrepo}ws/websocket.py
 chmod +x /usr/local/bin/ws-nontls
 
 # Installing Service
@@ -35,7 +35,7 @@ systemctl enable ws-nontls
 systemctl restart ws-nontls
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/ws-ovpn https://${sktrepo}/ws-ovpn.py
+wget -q -O /usr/local/bin/ws-ovpn https://${sktrepo}ws/ws-ovpn.py
 chmod +x /usr/local/bin/ws-ovpn
 
 # Installing Service
@@ -63,7 +63,7 @@ systemctl enable ws-ovpn
 systemctl restart ws-ovpn
 
 # Getting Proxy Template
-wget -q -O /usr/local/bin/ws-tls https://${sktrepo}/ws-tls
+wget -q -O /usr/local/bin/ws-tls https://${sktrepo}ws/ws-tls
 chmod +x /usr/local/bin/ws-tls
 
 # Installing Service
