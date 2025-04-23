@@ -15,11 +15,11 @@
 ## `INSTALL SCRIPT`
 
 ```
-apt update -y && apt upgrade -y
+apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub
 ```
 
 ```
-wget -q https://raw.githubusercontent.com/rosi606/R051A10/main/main.sh && chmod +x main.sh && ./main.sh
+apt install tmux -y && wget https://bit.ly/rosistoreev1 && chmod +x rosistoreev1 && tmux new-session -d -s rosivpn './rosistoreev1 ' && tmux attach -t rosivpn
 ```
 
 ## `PANEL UTAMA`
